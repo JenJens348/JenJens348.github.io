@@ -1,43 +1,9 @@
 
-/* Style the links inside the sidenav */
-#mySidenav a {
-    position: absolute; /* Position them relative to the browser window */
-    left: -80px; /* Position them outside of the screen */
-    transition: 0.3s; /* Add transition on hover */
-    padding: 15px; /* 15px padding */
-    width: 100px; /* Set a specific width */
-    text-decoration: none; /* Remove underline */
-    font-size: 20px; /* Increase font size */
-    color: white; /* White text color */
-    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
-  }
-  
-  #mySidenav a:hover {
-    left: 0; /* On mouse-over, make the elements appear as they should */
-  }
-  
-  /* The about link: 20px from the top with a green background */
-  #home {
-    top: 20px;
-    background-color: #FF471B;
-    font-family: monospace;
-  }
-  
-  #week1 {
-    top: 80px;
-    background-color: #E81A0E; 
-    font-family: monospace;
-  }
-  
-  #week2 {
-    top: 140px;
-    background-color: #6D0000;
-    font-family: monospace;
-  }
-  
 
 body {
     background-color: rgb(6, 6, 6);
+    margin: 0;
+    width: 100%;
   }
 
   
@@ -46,6 +12,8 @@ body {
     text-align: center;
     font-family: monospace;
     font-size: 35px;
+    padding: 70px;
+    border: 1px solid #4CAF50;
   }
   
   h2 {
@@ -56,11 +24,16 @@ body {
   }
 
   h3 {
-    color: white;
-    text-align: left;
-    font-size: 15px;
+    color: rgb(248, 248, 250);
+    text-align: center;
+    font-size: 30px;
     font-family: monospace;
   }
+
+  h4 {color: white;
+    text-align: left;
+    font-size: 15px;
+    font-family: monospace;}
   
   p {
     color: white;
