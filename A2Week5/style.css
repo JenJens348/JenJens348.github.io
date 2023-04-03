@@ -1,0 +1,166 @@
+:root{
+  --main-background-color: #000000;
+  --main-text-size: 0;
+  --color-1: hsl(243.98, 100%, 55.69%);
+  --custom-padding: 10px 200px 10px 200px;
+ }
+
+ 
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Reflection on your design system - why did you choose the particular mix of colours in your CSS styles & composition?
+
+The colour palette of this website is coded with a flow of blue to yellow in descending order. The colours yellow and blue were chosen due to the complementary and opposing 
+relationship they have with one another known by the RGB colour model.
+Though it would make sense to create a palette of greens to illustrate the other boxes, I wanted to emphases different harmonies of these primary colours, the bold colours
+selected from a palette generator helped to evoke a sense of warmth and vibrancy that I wanted to convey in this piece. 
+
+ */
+
+
+
+.container {  display: grid;
+    grid-template-columns: 3fr 0.3fr 0.5fr 0.9fr 1.1fr 1fr 0.9fr 1.8fr 1fr 0.3fr 0.1fr 2.2fr 1fr 1fr 1fr 1fr 1fr 1fr 0.1fr 3.7fr;
+    grid-template-rows: 1.5fr 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1.8fr 0.1fr 1.1fr 1fr 0.5fr 1.5fr 0.3fr 1.8fr 0.9fr 1fr;
+    gap: 0px 0px;
+    margin: auto;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . . . . . . . . . . . . . . . . . ."
+      ". . . . . . . . . . . . . . . . . . . ."
+      ". top top top top top top top top top top top top top top top top top top ."
+      ". top top top top top top top top top top top top top top top top top top ."
+      ". top top top top top top top top top top top top top top top top top top ."
+      ". top top top top top top top top top top top top top top top top top top ."
+      ". . . . . . . . . . . . . . . . . . . ."
+      ". . . . . . . . . . . . . . . . . . . ."
+      ". . . . . . . . . . . . . . . . . . . ."
+      ". . . . . . . . . . . . . . . . . . . ."
+      ". . . . . . . . . . . . . . . . . . . ."
+      ". . . . . . . . . . . . . . . . . . . ."
+      ". middle middle middle middle middle middle middle middle middle middle middle middle middle middle middle middle middle middle ."
+      ". . . . . . . . . . . . . . . . . . . ."
+      ". bottom-left-second bottom-left-second bottom-left-second bottom-left-second bottom-left-second bottom-left-second bottom-left-second bottom-right-second bottom-right-second bottom-right-second bottom-right-second bottom-right-second bottom-right-second bottom-right-second bottom-right-second bottom-right-second bottom-right-second bottom-right-second ."
+      ". bottom-left-second bottom-left-second bottom-left-second bottom-left-second bottom-left-second bottom-left-second bottom-left-second bottom-right-second bottom-right-second bottom-right-second bottom-right-second bottom-right-second bottom-right-second bottom-right-second bottom-right-second bottom-right-second bottom-right-second bottom-right-second ."
+      ". bottom-left-second bottom-left-second bottom-left-second bottom-left-second bottom-left-second bottom-left-second bottom-left-second bottom-third-right bottom-third-right bottom-third-right bottom-third-right bottom-third-right bottom-third-right bottom-third-right bottom-third-right bottom-third-right bottom-third-right bottom-third-right ."
+      ". bottom-left-third bottom-left-third bottom-left-third bottom-left-third bottom-left-third bottom-left-third bottom-left-third bottom-third-right bottom-third-right bottom-third-right bottom-third-right bottom-third-right bottom-third-right bottom-third-right bottom-third-right bottom-third-right bottom-third-right bottom-third-right ."
+      ". . . . . . . . . . . . . . . . . . . ."
+      ". bottom-left bottom-left bottom-left bottom-left bottom-left bottom-left bottom-left bottom-left . . bottom-right bottom-right bottom-right bottom-right bottom-right bottom-right bottom-right bottom-right ."
+      ". . . . . . . . . . . . . . . . . . . ."
+      ". . . . . . . . . . . . . . . . . . . .";
+  }
+  
+  .top { grid-area: top;
+    background-color: hsl(243.98, 100%, 55.69%);
+
+  
+  }
+  
+  .bottom-left-third { grid-area: bottom-left-third; 
+    background-color: hsl(341.05, 100%, 59.02%);
+    border-radius: 15px;}
+  
+  .bottom-left-second { grid-area: bottom-left-second;
+    background-color: hsl(292.53, 100%, 57.45%);
+     }
+  
+  .bottom-third-right {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.1fr 1.9fr;
+    gap: 0px 0px;
+    background-color: hsl(5.56, 100%, 59.8%);
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      "six five four";
+    grid-area: bottom-third-right;
+  }
+  
+  .four { grid-area: four; }
+  
+  .five { grid-area: five; }
+  
+  .six { grid-area: six; }
+  
+  .bottom-right-second {  display: grid;
+    grid-template-columns: 1.8fr 0.8fr 0.4fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    background-color: hsl(316.9, 100%, 58.24%);
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". onee one"
+      "tw twoo two"
+      "tree thre three";
+    grid-area: bottom-right-second;
+  }
+  
+  .one { grid-area: one; }
+  
+  .two { grid-area: two; }
+  
+  .three { grid-area: three; }
+  
+  .onee { grid-area: onee; }
+  
+  .twoo { grid-area: twoo; }
+  
+  .thre { grid-area: thre; }
+  
+  .tree { grid-area: tree; }
+  
+  .tw {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      ". . .";
+    grid-area: tw;
+  }
+  
+  .bottom-left { grid-area: bottom-left; 
+    background-color: hsl(29.7, 100%, 60.78%);
+    }
+  
+  .bottom-right { grid-area: bottom-right; 
+    background-color: hsl(53.88, 100%, 61.57%);
+    border-radius: 15px;}
+  
+  .middle { grid-area: middle; 
+    background-color: hsl(268.38, 100%, 56.47%);
+    }
+  
+  
+  html, body , .container {
+    height: 100%;
+    margin: 0;
+  }
+  
+
+  
+  .container * {
+    border: 1px solid rgb(0, 0, 0);
+    position: relative;
+  }
+  
+  .container *:after {
+    content:attr(class);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+  }
+  
+  
+  
+  
+  
