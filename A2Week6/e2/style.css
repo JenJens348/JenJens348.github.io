@@ -1,0 +1,251 @@
+/* z-index order */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&family=ZCOOL+KuaiLe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&family=ZCOOL+KuaiLe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Kaushan+Script&family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+  box-sizing: border-box;
+  background-origin: border-box;
+  margin: 0;
+}
+
+
+:root{
+  --col-01:#F9E4D4;
+  --col-02:#D67D3E;
+  --col-03:#9C0F48;
+  --col-04:#470D21;
+  --border: 1px solid var(--col-02);
+  --text-body: 'Manrope';
+  --text-header: 'ZCOOL KuaiLe';
+  --Manrope: 'Manrope', sans-serif;
+  --font-family: 'ZCOOL KuaiLe', sans-serif;
+  --Inter: 'Inter', sans-serif;
+  --Kaushan: 'Kaushan Script', cursive;
+  --Mont: 'Montserrat', sans-serif;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--col-01);
+  color: var(--col-04);
+  padding: 2vw;
+  font-family:var(--Manrope);
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/4887996/pexels-photo-4887996.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 5em;
+  color: #F9E4D4;
+}
+
+.hero h3 {
+  font-size: 1.5em;
+  color: #F9E4D4;
+}
+
+img{
+  width: 50%;
+  display: block;
+}
+
+/*
+  i've set up a basic flexbox for each recipe container - you might want to change some of the 
+  flex properties here on the container or on the individual flex items depending on how you want to style them
+*/
+
+h1{
+  --Manrope: 'Manrope', sans-serif;
+  justify-content: center;
+  text-align: center;
+
+}
+
+h2{
+  font-family: var(--Kaushan);
+  font-size: 2.6rem;
+}
+
+.menu-head{
+  text-align: center;
+}
+
+
+
+.menu-btns{
+  padding: 0.6rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.Time To Cook {
+  padding: 0.6rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.RecipeBox{
+  display: flex;
+  flex-direction: column;
+  border: var(--border);
+  font-family: var(--text-body);
+}
+
+.FilterSection{
+
+}
+
+.FilterBox{
+
+}
+
+.FilterBox{
+  font-family: var(--Inter);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 600;
+  background: none;
+  border: none;
+  color: var(--col-02);
+  display: block;
+  margin: 0 1rem;
+  cursor: pointer;
+  outline: 0;
+  transition: opacity 0.4s ease-out;
+
+}
+
+
+.FilterBox::after{
+  content: "";
+  display: block;
+  height: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--col-03);
+  margin-top: 0.5rem;
+  width: 0;
+  transition: width 0.4s ease-out;
+}
+
+.FilterBox{
+    padding: 0.6rem 0;
+    display: flex;
+    justify-content: center;
+  }
+  .FilterBox:hover::after{
+    width: 100%;
+  }
+  .FilterBox:hover{
+    opacity: 0.8;
+  }
+  .FilterBox{
+    color: var(--col-03);
+  }
+
+.FilterButton { 
+  display: inline-block;
+  display:grid;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+  outline: 0;
+  cursor: pointer;
+  padding: 5px 7px 2px;
+  border: 0;
+  color: #fff;
+  font-size: 15.5px;
+  border: 2px solid transparent;
+  border-color: var(--col-02);
+  color: var(--col-02);
+  background: transparent;
+  font-weight: 500;
+  line-height: 30px;
+  transition: background,color .1s ease-in-out;
+}
+
+.FilterButton:hover{
+  background-color: var(--col-02);
+  color: #fff;
+}
+
+.SelectedFilter{
+  
+}
+
+.RecipeLink{
+
+}
+
+
+
+.RecipeName{
+
+}
+
+.Author{
+  color: var(--col-02);
+
+}
+
+.RecipeImageContainer{
+
+}
+
+.RecipeImg{
+
+}
+
+.Attribution{
+
+}
+
+
+.Cuisine{
+
+}
+
+.TimeToCook{
+
+}
+
+.SkillLevel{
+
+}
+
+.Course{
+
+}
+
+.Servings{
+
+}
+
+.Dietary{
+
+}
