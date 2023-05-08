@@ -213,5 +213,15 @@ function clampZeroOne(input){
 
 function logEvent(e){
   console.log(e);
+  
+  /* Your code commenting should focus on the technical implementation and design choices related to your chosen extra 
+feature including a description of why that feature was the most appropriate choice in relation to the context.
+Why is the extra feature you picked important to the overall usability?  
+
+While the page itself is comprised of only the video player, the feedback of the colour change activated by the hover feedback and 
+icon change after selection are the feedback that tells the user an active area and what functions are available that are within control. 
+The function that I have added is the full screen feature, with the ability change the scale it provides the user with a more immersive
+varied scale of viewing. 
+to   */
 }
 
