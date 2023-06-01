@@ -1,0 +1,158 @@
+:root{
+    --color-1: #100d1d;
+    --color-2: #1a152e;
+    --color-3: #231c40;
+    --color-4: #2d2452;
+    --color-5: #362b64;
+    --color-6: #403376;
+    --color-7: #493a89;
+    --color-8: #52419b;
+    --color-9: #5b48ae;
+    --color-10: #6955ba;
+    --color-11: #FFFFFF;
+    --color-12: black;
+    font-size:large;
+    
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100vh;
+    background: #B3A7E8;
+    padding: 100px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+    
+
+     .parent {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      }
+      
+      .div1 { grid-area: 2 / 2 / 3 / 3; }
+      .div2 { grid-area: 3 / 3 / 4 / 4; }
+      .div3 { grid-area: 3 / 3 / 4 / 4; }
+      .div4 { grid-area: 3 / 3 / 4 / 4; }
+      .div5 { grid-area: 4 / 2 / 5 / 3; }
+      .div6 { grid-area: 2 / 3 / 4 / 5; }
+      .div7 { grid-area: 3 / 2 / 4 / 4; }
+      .div8 { grid-area: 3 / 3 / 6 / 4; }
+      .div9 { grid-area: 3 / 3 / 4 / 4; }
+      .div10 { grid-area: 3 / 3 / 5 / 5; }
+
+
+  h1{
+      color: var(--color-11);
+      padding: 3%;
+      font-size: 25px;
+  }
+  h2{
+      color: var(--color-11);
+      padding: 3%;
+      font-size: 25px;
+  }
+
+  h3{
+      color: var(--color-11);
+      padding: 3%;
+      font-size: 25px;
+  }
+  h4{
+      color: var(--color-10);
+      opacity: 50%;
+      padding: 3%;
+      font-size: 20px;
+  }
+  h5{
+      color: var(--color-10);
+      opacity: 50%;
+      padding: 3%;
+      font-size: 20px;
+  }
+  h6{
+      color: var(--color-10);
+      opacity: 50%;
+      padding: 3%;
+      font-size: 20px;
+  }
+  
+
+  .square1 {
+    background-color: var(--color-7);
+    width: 100px;
+    height: 100px;
+    opacity: 90%;
+  }
+
+  .square2 {
+    background-color: var(--color-2);
+    width: 600px;
+    height: 100px;
+    opacity: 80%;
+  }
+
+  .square3 {
+    background-color: var(--color-10);
+    width: 500px;
+    height: 200px;
+    opacity: 80%;
+  }
+
+  .square4 {
+    background-color: var(--color-4);
+    width: 700px;
+    height: 200px;
+    opacity: 90%;
+  }
+
+  .div5 {
+    background-color: var(--color-5);
+    width: 500px;
+    height: 250px;
+    opacity: 90%;
+  }
+
+  .square6 {
+    background-color: var(--color-6);
+    width: 400px;
+    height: 500px;
+    opacity: 90%;
+  }
+
+  .square7 {
+    background-color: var(--color-7);
+    width: 100px;
+    height: 150px;
+    opacity: 100%;
+  }
+
+  .square8 {
+    background-color: var(--color-8);
+    width: 400px;
+    height: 800px;
+    opacity: 90%;
+  }
+
+  .square9 {
+    background-color: var(--color-9);
+    width: 300px;
+    height: 70px;
+    opacity: 90%;
+  }
+
+  .square10 {
+    background-color: var(--color-10);
+    width: 350px;
+    height: 200px;
+    opacity: 90%;
+  }
+
+  
+
